@@ -159,8 +159,8 @@ void loop() {
     Serial.print(" Amp: ");
     Serial.print(normalizedMagnitudeAtPeak, 2);
     Serial.print("g");
-  } //else if(kurtosisValue = 3) {
-    else {
+  } else if(2.5 < kurtosisValue <= 3.2) {
+    //else {
     // Signal is random noise
     Serial.print("Random, ");
     //Serial.print("RMSvalue: ");
